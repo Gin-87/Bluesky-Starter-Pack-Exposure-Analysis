@@ -52,3 +52,8 @@ Open `Project_Phase_3.ipynb` in Jupyter or Google Colab and run cells in order. 
 ## References
 
 Balduf et al. (2024). Looking AT the Blue Skies of Bluesky. *ACM IMC.* https://doi.org/10.1145/3646547.3688407
+
+## License
+
+This project is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). You may view and share it with attribution, but may not modify or use it for commercial or academic submission purposes.
+
