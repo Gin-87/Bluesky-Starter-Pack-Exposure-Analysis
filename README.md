@@ -25,17 +25,12 @@ This project examines how attention is distributed through Bluesky Starter Packs
 |------|-------------|--------|
 | `starter_packs.parquet` | Starter Pack metadata (title, description, creator) | Balduf et al. (2024) |
 | `list_items.parquet` | Pack–member membership edges | Balduf et al. (2024) |
-| `starterpack_edges_processed.parquet` | Processed edge table with theme/language labels | Generated |
-| `starterpack_edges_processed_cleaned.parquet` | Cleaned subset (low-volume categories removed) | Generated |
 
-Raw datasets are downloaded at runtime from `bsky-data.leobalduf.com`.
+Raw datasets and intermediate files are generated at runtime. See the Data Collection section in the notebook for details.
 
 ## Project Structure
 ```
 ├── Project_Phase_3.ipynb       # Main analysis notebook
-├── selected_packs.csv          # High-coverage pack IDs for API enrichment
-├── real_pack_member_df.csv     # API-resolved pack → member handle table
-├── real_member_profiles.csv    # Bluesky profile metadata for boosted accounts
 └── README.md
 ```
 
@@ -53,7 +48,6 @@ Open `Project_Phase_3.ipynb` in Jupyter or Google Colab and run cells in order. 
 - Inequality metrics: Gini coefficient, top-k share, Lorenz curve
 - Streaming row-group aggregation for memory-efficient processing of 11M+ edges
 - Bluesky AT Protocol API + web scraping for observable identity resolution
-
 
 ## References
 
